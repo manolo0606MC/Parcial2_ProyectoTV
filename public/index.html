@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parcial 2</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+ 
+
+    <!-- nav bar-->
+    <nav class="navbar">
+      <img src="img/logo.png" class="logo" alt="" />
+
+
+      <div class="join-box">
+
+        <p style="color: red; font-weight: 200;" class="join-msg">Series y Peliculas Elimitadas</p>
+       
+        <input type="text" id="search"  placeholder="Series, Peliculas y mas">
+      
+       <select id="filtro">
+        <option value="Por Titulo">Buscar Por Titulo</option>
+         <option value="Géneros">Busca los Género</option>
+         <option value="Series">Series</option>
+         <option value="Por Año">Buscar Por Año de Estreno</option>
+         <option value="Clasificacion(R(+18),PG13,PG o G">Buscar Por Clasificacion(R(+18),PG13,PG o G</option>
+         <option value="Peliculas en Cine">Peliculas Actualmente en Cine</option>
+         <option value="Peliculas mayor Botadas para Adultos">Peliculas para Adultos mejor Calificadas</option>
+        </select>
+
+        <button class="button is-success is-outlined" onclick="{Busqueda()}">Buscar</button>
+  
+      </div>
+    </nav>
+     
+
+    <!-- SEccion principal-->
+    <header class="main">
+      <di style="margin: auto; color: red;">
+        <button class="button is-danger is-rounded">Suscribase hoy</button>
+
+        <button class="button is-success">
+          <span class="icon is-small">
+            <i class="fas fa-check"></i>
+          </span>
+          <span>Ingresar</span>
+        </button>
+      </di>
+      <h1 style="color: blue; border: darkgrey; font-family: fantasy;" class="heading">Pelis</h1>
+      <p style="color: blue;" class="info">
+        Las mejores Peliculas, Series y Porgramas de Televisión para tu entretenimiento
+      </p>
+
+      
+      </header>
+
+      <!-- se hacen la referncia a los JS en este orden -->
+    <script src="js/api.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/scroll.js"></script>
+  </body>
+</html>
